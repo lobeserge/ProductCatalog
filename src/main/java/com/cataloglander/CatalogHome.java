@@ -16,7 +16,7 @@ public class CatalogHome extends HttpServlet {
        
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/views/login.jsp");
+		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/views/welcome.jsp");
 		rd.forward(request,response);
 	}
    

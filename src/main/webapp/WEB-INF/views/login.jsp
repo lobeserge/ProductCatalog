@@ -15,6 +15,10 @@ Password:<input type="password" name="password"/><br/><br/>
 ${warning}
 <p>${notlogin}</p>
 <br>
-<a href="/CatalogHome">welcome page</a>
+<form action="/CatalogHome" method="post">
+<a><input type="submit" value="welcome page"></a>
+</form>
+
+
 </body>
 </html>

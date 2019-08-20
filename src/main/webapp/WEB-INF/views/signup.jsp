@@ -4,15 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>welcome page</title>
+<title>SignUp Page</title>
 </head>
 <body>
-Welcome to product catalog landing page
-<a href="/LogoutServlet">Logout</a><br>
-<a href="/SignUpServlet">Sign Up now</a><br>
- 
 
-<a href="/CategoryHomeServlet">add new categroy</a>
-
+<form action="/SignUpServlet" method="post">
+<input type="text" name="signname">
+<input type="text" name="signuser">
+<input type="password" name="signpass">
+<input type="submit"  value="Sign Up ">
+</form>
+<a href="/CatalogHome">go back</a>
 </body>
 </html>
