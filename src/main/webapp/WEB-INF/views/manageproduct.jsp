@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>welcome page</title>
+<title>manage Product</title>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<%@include file="header.jsp" %>
+
+<a href="/AddProductServlet" class="btn btn-succes">Add new Product</a>
 </body>
 </html>

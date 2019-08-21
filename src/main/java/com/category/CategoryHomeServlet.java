@@ -21,4 +21,11 @@ public class CategoryHomeServlet extends HttpServlet {
 		    rd.forward(request,response);
 	}
 
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setAttribute("categories",catr.retrieveCategory());
+		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/views/managecategory.jsp");
+		    rd.forward(request,response);
+	}
+	
+	
 }

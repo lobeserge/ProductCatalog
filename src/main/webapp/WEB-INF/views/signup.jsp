@@ -5,15 +5,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>SignUp Page</title>
+<link href="/webjars/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+<%@include file="header.jsp" %>
 
-<form action="/SignUpServlet" method="post">
-<input type="text" name="signname">
-<input type="text" name="signuser">
-<input type="password" name="signpass">
-<input type="submit"  value="Sign Up ">
+<div class="container-fluid " style="margin-top:10%;">
+
+<div class="col-md-4 col-md-offset-4">
+<h3 style="color:green;">Sign Up </h3>
+<form action="/SignUpServlet" method="post" class="form-group ">
+<input type="text" name="signname" class="form-control mt-20" placeholder="given names"><br><br>
+<input type="text" name="signuser" class="form-control " placeholder="username"><br><br>
+<input type="password" name="signpass" class="form-control mt-20" placeholder="password"><br><br>
+<input type="submit"  value="Sign Up" class="btn btn-success btn-lg" style="font-size:15px;padding:4px 20px;">
 </form>
-<a href="/CatalogHome">go back</a>
+
+</div>
+</div>
+
+<script src="/webjars/jquery/1.9.1/jquery.js"></script>
 </body>
 </html>

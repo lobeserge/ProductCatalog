@@ -17,17 +17,12 @@ import com.connectdb.ConnectDB;
 @WebServlet("/RetrieveCategory")
 public class RetrieveCategory extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	 
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-	}
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
-		 RequestDispatcher rd=request.getRequestDispatcher("/CategoryHomeServlet");
-		    rd.forward(request,response);
-		try{
+		CategoryService serviceclear=new CategoryService();
+		serviceclear.clearlist();
+try{
 			
 			String sql="select * from category";
 			Connection conn=ConnectDB.DbConnector();
@@ -42,7 +37,13 @@ public class RetrieveCategory extends HttpServlet {
 		catch(Exception e){
 			System.out.print(e);
 		}
-		
+	    response.sendRedirect("/CategoryHomeServlet");
 	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		RequestDispatcher rd=request.getRequestDispatcher("/RetrieveCategory");
+		rd.forward(request,response);
+	}
+		
 
 }

@@ -6,9 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Manage Categories</title>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-
+<%@include file="header.jsp" %>
 <form action="/AddCategoryServlet" method="post">
 <input type="text" name="catname">
 <input type="text" name="catdescription">
@@ -17,13 +18,26 @@
 <br>
 <br>
 
-<div>
+<div class="container-fluid">
+<table class="table table-striped">
+
+		<thead>
+			<th>Category</th>
+			<th>Description</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</thead>
+		<tbody>
 <c:forEach items="${categories}" var="cat">
-				<p>${cat.CategoryName}
-				
-				${cat.CategoryDetails}</p>
-				
+<tr>
+				<td>${cat.getCategoryName()}</td>
+				<td>${cat.getCategoryDetails()}</td>
+				<td>&nbsp;&nbsp;<a href="#"  class="btn btn-info">Edit</a></td>
+				<td>&nbsp;&nbsp;<a href="DeleteCategoryServlet?catname=${cat.getCategoryName()}&catdesc=${cat.getCategoryDetails()}"  class="btn btn-danger">Delete</a></td>
+</tr>
 </c:forEach>
+</tbody>
+	</table>
 </div>
 
 

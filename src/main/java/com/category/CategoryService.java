@@ -3,10 +3,12 @@ package com.category;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class CategoryService {
 
 	
-	List<Category> categorylist=new ArrayList<Category>();
+	private static	List<Category> categorylist=new ArrayList<Category>();
 	
 	
 	public List<Category> retrieveCategory(){
@@ -19,5 +21,8 @@ public class CategoryService {
 	
 	public void deletecategory(Category cat){
 		categorylist.remove(cat);
+	}
+	public void clearlist(){
+		categorylist.clear();
 	}
 }

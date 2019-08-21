@@ -1,12 +1,12 @@
 package com.category;
 
 public class Category {
-String CategoryName;
-String CategoryDetails;
-
-public Category(String cn,String dt){
-	this.CategoryName=cn;
-	this.CategoryDetails=dt;
+private String CategoryName;
+private String CategoryDetails;
+public Category(String categoryName, String categoryDetails) {
+	super();
+	CategoryName = categoryName;
+	CategoryDetails = categoryDetails;
 }
 public String getCategoryName() {
 	return CategoryName;
@@ -25,6 +25,8 @@ public String toString() {
 	return "Category [CategoryName=" + CategoryName + ", CategoryDetails="
 			+ CategoryDetails + "]";
 }
-	
-	
+
+
+
+
 }

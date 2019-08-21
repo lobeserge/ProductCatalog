@@ -4,9 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>welcome page</title>
+<title>Add Product</title>
 </head>
 <body>
+
+
 <%@include file="header.jsp" %>
+<h2>Add a new Product Today</h2>
+<form action="/AddProductServlet" method="post" enctype="multipart/form-data" >
+  <input type="text" name="id">
+  <input type="text" name="name">
+  <input type="text" name="price">
+  <input type="text" name="pcat">
+  <input type="file" name="image">
+  <input type="submit">
+</form>
 </body>
 </html>

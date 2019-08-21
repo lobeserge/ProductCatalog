@@ -5,20 +5,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Login Page</title>
+<link href="/webjars/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<form action="/LoginServlet" method="post">
-Name:<input type="text" name="username"/><br/><br/>
-Password:<input type="password" name="password"/><br/><br/>
-<input type="submit" value="login"/>
-</form>
-${warning}
-<p>${notlogin}</p>
-<br>
-<form action="/CatalogHome" method="post">
-<a><input type="submit" value="welcome page"></a>
-</form>
 
 
+
+
+
+<div class="container-fluid " style="margin-top:10%;">
+
+<div class="col-md-4 col-md-offset-4">
+<h3 style="color:green;">Sign In </h3>
+ <form action="/LoginServlet" method="post" class="form-group formcen">
+<input type="text" name="username" class="form-control mt-20" placeholder="username"/><br/><br/>
+<input type="password" name="password"  class="form-control mb-20" placeholder="password"/><br/><br/>
+<input type="submit" value=" login" class="btn btn-success btn-lg" style="font-size:15px;padding:4px 20px;"/>
+<h5 style="color:red">${warning}</h5>
+<p><span style="font-size:15px; color:grey;">Don't have and account?</span> 
+<a href="/SignUpServlet"><span style="font-size:15px; color:green;" >SignUp today</span></a></p>
+</form>
+
+</div>
+</div>
+<script src="/webjars/jquery/1.9.1/jquery.js"></script>
 </body>
 </html>
