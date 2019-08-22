@@ -16,7 +16,7 @@
                 <a class="nav-link" href="/CatalogHome" style="color:white;font-size:15px;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/ProductHomeServlet"  style="color:white;font-size:15px;">Products</a>
+                <a class="nav-link" href="/RetrieveProductServlet"  style="color:white;font-size:15px;">Products</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/RetrieveCategory" style="color:white;font-size:15px;">Category</a>

@@ -9,7 +9,7 @@ public class Products {
 	String ProductCategory;
 	
 	public Products(String productId, String productName, String productPrice,
-			String productCategory, String prouctImage) {
+			String productCategory) {
 		super();
 		ProductId = productId;
 		ProductName = productName;

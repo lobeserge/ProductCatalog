@@ -17,7 +17,7 @@
 
 <div class="col-md-4 col-md-offset-4">
 <h3 style="color:green;">Sign In </h3>
- <form action="/LoginServlet" method="post" class="form-group formcen">
+ <form action="/LoginServlet" method="post" class="form-group ">
 <input type="text" name="username" class="form-control mt-20" placeholder="username"/><br/><br/>
 <input type="password" name="password"  class="form-control mb-20" placeholder="password"/><br/><br/>
 <input type="submit" value=" login" class="btn btn-success btn-lg" style="font-size:15px;padding:4px 20px;"/>

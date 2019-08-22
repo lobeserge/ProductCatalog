@@ -3,34 +3,41 @@ package com.products;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.category.Category;
-import com.category.CategoryService;
 import com.connectdb.ConnectDB;
 
-@WebServlet("/ProductHomeServlet")
-public class ProductHomeServlet extends HttpServlet {
+
+@WebServlet("/DeleteProductServlet")
+public class DeleteProductServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	ProductService prdt=new ProductService();
+    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("productslist",prdt.retrieveProducts());
-		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/views/manageproduct.jsp");
-		    rd.forward(request,response);
+		
+
+		try{
+			String sql="delete from  products where productid=?";
+			Connection conn=ConnectDB.DbConnector();
+			PreparedStatement prs=conn.prepareStatement(sql);
+			prs.setString(1, request.getParameter("prdtdel"));
+			prs.executeUpdate();
+			System.out.print("deleted product");
+		}
+		catch(Exception e){
+			System.out.print(e);
+		}
+		response.sendRedirect("/RetrieveProductServlet");
+	
 	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setAttribute("productslist",prdt.retrieveProducts());
-		RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/views/manageproduct.jsp");
-		    rd.forward(request,response);
+		
 	}
 
 }

@@ -25,7 +25,7 @@
 		<thead>
 			<th>Category</th>
 			<th>Description</th>
-			<th>Edit</th>
+			<th>Update</th>
 			<th>Delete</th>
 		</thead>
 		<tbody>
@@ -33,7 +33,7 @@
 <tr>
 				<td>${cat.getCategoryName()}</td>
 				<td>${cat.getCategoryDetails()}</td>
-				<td>&nbsp;&nbsp;<a href="/UpdateCategoryRetrieve?catname=${cat.getCategoryName()}&catdesc=${cat.getCategoryDetails()}"  class="btn btn-info">       Edit      </a></td>
+				<td>&nbsp;&nbsp;<a href="/UpdateCategoryRetrieve?catname=${cat.getCategoryName()}&catdesc=${cat.getCategoryDetails()}"  class="btn btn-info">       Update      </a></td>
 				<td>&nbsp;&nbsp;<a href="DeleteCategoryServlet?catname=${cat.getCategoryName()}&catdesc=${cat.getCategoryDetails()}"  class="btn btn-danger">Delete</a></td>
 </tr>
 </c:forEach>
