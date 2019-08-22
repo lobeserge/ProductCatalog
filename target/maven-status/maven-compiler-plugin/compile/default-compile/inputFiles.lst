@@ -4,12 +4,14 @@ C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\category\DeleteC
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\connectdb\ConnectDB.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\products\ProductService.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\category\CategoryHomeServlet.java
+C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\category\UpdateCategoryRetrieve.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\products\Products.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\logout\LogoutServlet.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\category\Category.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\products\ProductHomeServlet.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\category\AddCategoryServlet.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\login\LoginServlet.java
+C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\category\UpdateCategoryServlet.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\login\ValidateLogin.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\category\CategoryService.java
 C:\Users\GoTraining\workspace\Product-Catalog\src\main\java\com\category\RetrieveCategory.java

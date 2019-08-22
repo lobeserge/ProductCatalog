@@ -18,6 +18,7 @@
 <br>
 <br>
 
+
 <div class="container-fluid">
 <table class="table table-striped">
 
@@ -32,7 +33,7 @@
 <tr>
 				<td>${cat.getCategoryName()}</td>
 				<td>${cat.getCategoryDetails()}</td>
-				<td>&nbsp;&nbsp;<a href="#"  class="btn btn-info">Edit</a></td>
+				<td>&nbsp;&nbsp;<a href="/UpdateCategoryRetrieve?catname=${cat.getCategoryName()}&catdesc=${cat.getCategoryDetails()}"  class="btn btn-info">       Edit      </a></td>
 				<td>&nbsp;&nbsp;<a href="DeleteCategoryServlet?catname=${cat.getCategoryName()}&catdesc=${cat.getCategoryDetails()}"  class="btn btn-danger">Delete</a></td>
 </tr>
 </c:forEach>
