@@ -8,11 +8,22 @@
 <link href="webjars/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+
+
+
+
 <%@include file="header.jsp" %>
-<form action="/UpdateCategoryServlet" method="post">
-<input type="text" name="cat-name" value="<%=request.getAttribute("cat-name")%>">
-<input type="text" name="cat-description" value="<%=request.getAttribute("cat-desc")%>">
-<input type="submit" value="Update category">
+
+<div class="container-fluid " style="margin-top:10%;">
+
+<div class="col-md-6 col-md-offset-4">
+<h3 style="color:green;">Update Category</h3>
+<form action="/UpdateCategoryServlet" method="post" class="form-group ">
+<input type="text" name="cat-name" value="<%=request.getAttribute("cat-name")%>"  class="form-control "><br><br>
+<input type="text" name="cat-description" value="<%=request.getAttribute("cat-desc")%>" class="form-control"><br><br>
+<input type="submit" value="Update" class="btn btn-success">
 </form>
+</div>
+</div>
 </body>
 </html>
