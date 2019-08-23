@@ -25,12 +25,12 @@ public class ProcessImageServlet extends HttpServlet {
 		byte[ ] imgData = null ;
 		 PreparedStatement prs=null;
 		try {
-		String sql="select productimage from products where productid=?";
+		String sql="select productimage from products where productid='"+request.getParameter("prdtdel")+"'";
 		Connection con=ConnectDB.DbConnector();
 		prs = con.prepareStatement(sql);
 		ResultSet rs=prs.executeQuery();
 		if (rs.next()) {
-		Blob image = rs.getBlob(request.getParameter("prdtdel"));
+		Blob image = rs.getBlob(1);
 		imgData = image.getBytes(1,(int)image.length());
 		}
 		else {
