@@ -13,7 +13,7 @@
     <a class="navbar-brand" href="#" style="color:white;">ProductCatalog</a>
     <ul class="nav navbar-nav mr-auto" style="padding-right:12px;">
             <li class="nav-item active text-success">
-                <a class="nav-link" href="/CatalogHome" style="color:white;font-size:15px;">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/RetrieveCatalogServlet" style="color:white;font-size:15px;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/RetrieveProductServlet"  style="color:white;font-size:15px;">Products</a>
