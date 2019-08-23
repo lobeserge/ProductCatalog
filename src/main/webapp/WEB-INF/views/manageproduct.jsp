@@ -29,13 +29,13 @@
 		</thead>
 		<tbody>
 <c:forEach items="${productslist}" var="pdt">
-<tr>           <%--  <td><a target='_blank' href='<%=response.encodeURL("/ProcessImageServlet?prdtdel="+ ${pdt.getProductId()})%>'></a></td> --%>
-                <td><img src="/ProcessImageServlet?prdtdel=${pdt.getProductId()}"></td>
+<tr>           
+                <td><img src="/ProcessImageServlet?prdtdel=${pdt.getProductId()}" style="width:50px;height 50px;"></td>
 				<td>${pdt.getProductId()}</td>
 				<td>${pdt.getProductName()}</td>
 				<td>${pdt.getProductPrice()}</td>
 				<td>${pdt.getProductCategory()}</td>
-				<td>&nbsp;&nbsp;<a href="#" class="btn btn-info" >       Update      </a></td>
+				<td>&nbsp;&nbsp;<a href="/UpdateProductRetrieve?mprdtid=${pdt.getProductId()}&mprdname=${pdt.getProductName()}&mprdprice=${pdt.getProductPrice()}&mprdcat=${pdt.getProductCategory()}" class="btn btn-info"  >       Update      </a></td>
 				<td>&nbsp;&nbsp;<a href="/DeleteProductServlet?prdtdel=${pdt.getProductId()}"  class="btn btn-danger">Delete</a></td>
 </tr>
 </c:forEach>
