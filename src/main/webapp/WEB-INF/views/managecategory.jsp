@@ -10,11 +10,20 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
-<form action="/AddCategoryServlet" method="post">
-<input type="text" name="catname">
-<input type="text" name="catdescription">
-<input type="submit" value="add category">
+<div class="container-fluid " style="margin-top:3%;">
+
+
+<form action="/AddCategoryServlet" method="post" class="form-group ">
+<div class="col-md-4">
+<input type="text" name="catname" placeholder="category name" class="form-control col-md-4">
+</div>
+<div class="col-md-4">
+<input type="text" name="catdescription"  placeholder="description" class="form-control col-md-4">
+</div>
+<input type="submit" value="add category"   class="btn btn-success" >
 </form>
+</div>
+</div>
 <br>
 <br>
 
