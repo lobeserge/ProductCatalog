@@ -10,9 +10,11 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
+
 <div class="container ">
 
 <c:forEach items="${productslistcatalog}" var="pdt">
+<a href="/UpdateProductRetrieve?mprdtid=${pdt.getProductId()}&mprdname=${pdt.getProductName()}&mprdprice=${pdt.getProductPrice()}&mprdcat=${pdt.getProductCategory()}" >
 <div class="col-md-6">
 <div class="row" style="padding-right:30px;padding-bottom:30px;">
     <div class="card">
@@ -24,6 +26,7 @@
     </div>
   </div>
 </div>
+</a>
 </c:forEach>
 
 </div>

@@ -15,12 +15,12 @@
 
 <div class="col-md-4 col-md-offset-4" class="form-group ">
 <form action="/AddProductServlet" method="post" enctype="multipart/form-data" >
-  <input type="text" name="id"  class="form-control mt-20" placeholder="Product Category"><br><br>
+  <input type="text" name="id"  class="form-control mt-20" placeholder="Product id"><br><br>
   <input type="text" name="name"  class="form-control mt-20" placeholder="Product Name"><br><br>
   <input type="text" name="price"  class="form-control mt-20" placeholder="Product Price"><br><br>
   <input type="text" name="pcat"  class="form-control mt-20" placeholder="Product Category"><br><br>
   <input type="file" name="image"  class="form-control mt-20" placeholder="Select File"><br><br>
-  <input type="submit" value="Submit Category" class="btn btn-success btn-lg form-control" ><br><br>
+  <input type="submit" value="Submit Product" class="btn btn-success btn-lg form-control" ><br><br>
 </form>
 </div>
 </div>
