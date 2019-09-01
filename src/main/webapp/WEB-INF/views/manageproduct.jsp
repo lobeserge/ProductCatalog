@@ -11,12 +11,13 @@
 <body>
 <%@include file="header.jsp" %>
 <br>
-<a href="/AddProductServlet" class="btn btn-success">Add new Product</a>
-
+<div class="container-fluid">
+<a href="/AddProductServlet" class="btn btn-success" >Add new Product</a>
+</div>
 
 
 <div class="container-fluid">
-<table class="table table-striped">
+<table class="table table-striped table-hover">
 
 		<thead>
 		    <th>Image</th>

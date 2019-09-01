@@ -38,6 +38,7 @@ public class LoginServlet extends HttpServlet {
 		else{
 			
 			request.setAttribute("warning", "please enter valid credentials");
+			request.setAttribute("guest", "GEUST");
 			RequestDispatcher rd=request.getRequestDispatcher("/WEB-INF/views/login.jsp");
 			rd.forward(request,response);
 		}

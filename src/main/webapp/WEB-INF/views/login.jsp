@@ -20,7 +20,7 @@
  <form action="/LoginServlet" method="post" class="form-group ">
 <input type="text" name="username" class="form-control mt-20" placeholder="username"/><br/><br/>
 <input type="password" name="password"  class="form-control mb-20" placeholder="password"/><br/>
-<input type="submit" value=" login" class="btn btn-success btn-lg" style="font-size:15px;padding:4px 20px;"/>
+<input type="submit" value=" login" class="btn btn-success btn-lg" id="loginbtn" style="font-size:15px;padding:4px 20px;" />
 <h5 style="color:red">${warning}</h5>
  <h5 style="color:red">${errrorlogin}</h5>
 <p><span style="font-size:15px; color:grey;">Don't have and account?</span> 
