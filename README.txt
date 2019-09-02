@@ -5,7 +5,7 @@ clone the project to your local repository and import to eclipse as a maven proj
 
 2)import the tables into the database created in 1 above, the tables are found in the productcatalog-db folder
 
-3)After , run your project in eclipse.
+3)After , run your project in eclipse as a maven build. -->tomcat7:run
 
 4)sample data has already been added to the table in the database (you could add more data)
 -
