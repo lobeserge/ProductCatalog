@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:29:58 +0200] "GET / HTTP/1.1" 200 1186 http-bio-8080-exec-2 2654
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:29:58 +0200] "GET /webjars/bootstrap/3.3.6/css/bootstrap.css HTTP/1.1" 200 146082 http-bio-8080-exec-3 105
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:29:58 +0200] "GET /webjars/jquery/1.9.1/jquery.js HTTP/1.1" 200 268381 http-bio-8080-exec-4 89
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:30:03 +0200] "GET /SignUpServlet HTTP/1.1" 200 3099 http-bio-8080-exec-7 621
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:30:04 +0200] "GET /webjars/bootstrap/3.3.6/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028 http-bio-8080-exec-9 20
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:30:21 +0200] "POST /SignUpServlet HTTP/1.1" 200 3099 http-bio-8080-exec-2 1001
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:36:17 +0200] "GET / HTTP/1.1" 200 1186 http-bio-8080-exec-1 1669
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:36:30 +0200] "POST /SignUpServlet HTTP/1.1" 200 3099 http-bio-8080-exec-5 1864
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:36:40 +0200] "POST /SignUpServlet HTTP/1.1" 200 3099 http-bio-8080-exec-8 34
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:38:12 +0200] "POST /SignUpServlet HTTP/1.1" 200 3099 http-bio-8080-exec-2 908
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:39:30 +0200] "POST /SignUpServlet HTTP/1.1" 200 3099 http-bio-8080-exec-5 875
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:41:50 +0200] "GET / HTTP/1.1" 200 1186 http-bio-8080-exec-2 366
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:41:52 +0200] "GET /SignUpServlet HTTP/1.1" 200 3099 http-bio-8080-exec-3 42
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:19:42:08 +0200] "POST /SignUpServlet HTTP/1.1" 200 3099 http-bio-8080-exec-6 1027
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:20:06:44 +0200] "GET /RetrieveCategory HTTP/1.1" 200 1210 http-bio-8080-exec-1 611
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:20:06:48 +0200] "GET /SignUpServlet HTTP/1.1" 200 3099 http-bio-8080-exec-5 95
+0:0:0:0:0:0:0:1 - - [09/Oct/2019:20:07:04 +0200] "POST /SignUpServlet HTTP/1.1" 200 3099 http-bio-8080-exec-8 2881

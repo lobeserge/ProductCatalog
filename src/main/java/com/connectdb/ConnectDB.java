@@ -10,12 +10,14 @@ public class ConnectDB {
 	      Connection con;
 	        try{
 	            Class.forName("com.mysql.jdbc.Driver");
-	            con=DriverManager.getConnection("jdbc:mysql://localhost/productcatalog" , "root", "lobe");
+	            con=DriverManager.getConnection("jdbc:mysql://localhost/productcatalog-db" , "root", "");
 	           System.out.print("\nDatabase connected\n");
 	            return con;
 	            
 	        }catch(Exception ex){
-	            return null;
+	           System.out.print(ex);
+	           ex.printStackTrace();
+	           return null;
 	        }
 	           
 	    }
