@@ -13,12 +13,12 @@ This project was build using the following technologies
 To run this project the following softwares are required
 * Eclipse IDE
 * Maven
-* Mysql Server version 8.0
-* Mysql WorkBench
+* Mysql Server version 5.5 
+* Mysql WorkBench 
 ### Installation
 * Clone this project to your local repository
 * Import the project into eclipse as an existing maven project
-* Startup Mysql server 8.0 CLI and create a database called productcatalog-db
+* Startup Mysql server 5.5 CLI and create a database called productcatalog-db
 * From Workbench UI Import the sql file found in folder productcatalog-db to the database just created
 * Ensure that your  user name is root and password lobe or you could update this information in the connection class
 * Run as a maven project from eclipse
