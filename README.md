@@ -30,6 +30,8 @@ To run this project the following softwares are required
 * use the Category tab to add,edit delete products
 * you could also manage products by clicking it from the homepage
 
+### Acknowledgement
+Go Groups Ltd Buea 
 
 ### Lincence 
 This project is a work of lobe nyoh serge  @allrightreserve
